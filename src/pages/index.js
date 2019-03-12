@@ -43,11 +43,11 @@ export default class Index extends React.Component {
         <section className="section">
           <div className="container">
             <div className="content">
-              <h1>Contact</h1>
+              <h3>Welcome</h3>
               <form
-                name="contact"
+                name="sign-up"
                 method="post"
-                action="/contact/thanks/"
+                action="/success"
                 data-netlify="true"
                 data-netlify-honeypot="bot-field"
                 onSubmit={this.handleSubmit}
@@ -61,52 +61,38 @@ export default class Index extends React.Component {
                   </label>
                 </div>
                 <div className="field">
-                  <label className="label" htmlFor={"name"}>
-                    Your name
+                  <label className="label" htmlFor={"url"}>
+                    seak.space/
                   </label>
                   <div className="control">
                     <input
                       className="input"
                       type={"text"}
-                      name={"name"}
+                      name={"url"}
                       onChange={this.handleChange}
-                      id={"name"}
+                      id={"url"}
                       required={true}
                     />
                   </div>
                 </div>
                 <div className="field">
-                  <label className="label" htmlFor={"email"}>
-                    Email
+                  <label className="label" htmlFor={"phone"}>
+                    Phone Number
                   </label>
                   <div className="control">
                     <input
                       className="input"
-                      type={"email"}
-                      name={"email"}
+                      type={"tel"}
+                      name={"phone"}
                       onChange={this.handleChange}
-                      id={"email"}
-                      required={true}
-                    />
-                  </div>
-                </div>
-                <div className="field">
-                  <label className="label" htmlFor={"message"}>
-                    Message
-                  </label>
-                  <div className="control">
-                    <textarea
-                      className="textarea"
-                      name={"message"}
-                      onChange={this.handleChange}
-                      id={"message"}
+                      id={"phone"}
                       required={true}
                     />
                   </div>
                 </div>
                 <div className="field">
                   <button className="button is-link" type="submit">
-                    Send
+                    Create
                   </button>
                 </div>
               </form>
